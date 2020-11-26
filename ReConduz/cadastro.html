@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ReConduz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="scss/style.scss" rel="stylesheet">
+
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+                <a href="index.html" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.png);"></a>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Início</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a target="_blank">Meu Cadastro</a>
+                            </li>
+                            <li>
+                                <a href="#">Inscrições</a>
+                            </li>
+                            <li>
+                                <a href="#">Currículo</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ONG's</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+
+                            <li>
+                                <a href="#">Ciências Contábeis</a>
+                            </li>
+                            <li>
+                                <a href="#">Sistemas para Internet</a>
+                            </li>
+                            <li>
+                                <a href="#">Publicidade e Propaganda</a>
+                            </li>
+                            <li>
+                                <a href="#">Psicologia</a>
+                            </li>
+                            <li>
+                                <a href="#">Odontologia</a>
+                            </li>
+                            <li>
+                                <a href="#">Medicina Veterinária</a>
+                            </li>
+                            <li>
+                                <a href="#">Engenharia Civil</a>
+                            </li>
+                            <li>
+                                <a href="#">Enfermagem</a>
+                            </li>
+                            <li>
+                                <a href="#">Direito</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Dúvidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Novidades</a>
+                    </li>
+                </ul>
+                <div class="footer">
+                    <p>
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        - Turma de TSI, Projeto ReConduz
+                    </p>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ONG's</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dúvidas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Novidades</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="">
+                <div class="form-group">
+                    <form method="get" id="form1" action="formulario1">
+
+                        <body>
+
+                            <p><label for="nome">Nome</label>
+                                <input type="text" id="nome" placeholder="Informe seu nome" maxlength="40"> <br>
+                            </p>
+
+                            <label for="sexo">Sexo</label> <br>
+                            <input type="radio" id="masculino" name="genero" value="Masculino">
+                            <label for="masculino">Masculino</label><br>
+                            <input type="radio" id="feminino" name="genero" value="Feminino">
+                            <label for="feminino">Feminino</label><br>
+                            <input type="radio" id="outros" name="genero" value="Outros">
+                            <label for="outros">Outros</label> <br>
+
+                            <p><label for="dataNascimento">Data de Nascimento</label>
+                                <input type="date" id="dataNascimento" placeholder="Informe sua data de nascimento"><br></p>
+
+                            <p><label for="logradouro">Logradouro</label>
+                                <input type="text" name="logradouro" id="logradouro" placeholder="Informe seu logradouro" maxlength="60"><br></p>
+
+                            <p><label for="cep">CEP</label>
+                                <input name="cep" type="text" id="cep" onkeypress="mascara(this, '#####-###')" size="10" maxlength="9" onblur="pesquisacep(this.value);"><br>
+                            </p>
+
+                            <p><label for="numero">Numero de Celular</label>
+                                <input type="text" id="numero" onkeypress="mascara(this, '## # ####-####')" placeholder="Informe seu número" maxlength="14"> <br>
+                            </p>
+
+                            <p><label for="bairro">Bairro</label>
+                                <input name="bairro" placeholder="Informe seu bairro" type="text" id="bairro" size="40"><br>
+                            </p>
+
+                            <p><label for="cidade">Cidade</label>
+                                <input name="cidade" placeholder="Informe sua cidade" type="text" id="cidade" size="40"><br>
+                            </p>
+
+                            <p><label for="uf">Estado</label>
+                                <input name="uf" type="text" value="" id="uf" size="2"><br>
+                            </p>
+
+                            <p><label for="estadoCivil">Estado Civil:</label>
+                                <select id="estadoCivil">
+                                    <option>Solteiro</option>
+                                    <option>Casado</option>
+                                    <option>Divorciado</option>
+                                    <option>Separado</option>
+                                    <option>Viuvo</option>
+                                </select> <br>
+                            </p>
+
+                            <p><label for="renda">Renda</label>
+                                <input type="number" id="renda"> <br>
+                            </p>
+
+                            <p><label for="senha">Senha</label>
+                                <input type="password" id="senha"> <br>
+                            </p>
+
+                            <button type="button" onclick="informaEmTela()">Enviar</button><br>
+
+                        </body>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div id="footer" class="text-center">
+        <div class="container">
+            <div class="socials-media text-center">
+
+                <ul class="list-unstyled">
+                    <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                    <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                    <li><a href=""><i class="ion-social-instagram"></i></a></li>
+                    <li><a href=""><i class="ion-social-linkedin"></i></a></li>
+                    <li><a href=""><i class="iconify" data-icon="codicon:file-pdf" data-inline="false"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="contactform/contactform.js"></script>
+</body>
+
+</html>
